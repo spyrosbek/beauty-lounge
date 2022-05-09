@@ -382,6 +382,10 @@ body {
   02. TYPOGRAPHY
   =========================================================================== */
 
+.font-candara {
+  font-family: Candara;
+}
+
 h6, h5, h4, h3, h2, h1 {
   color: #373b4d;
   font-family: 'Lora', serif;
@@ -1126,6 +1130,10 @@ ol.digit-list p {
   font-size: 1rem;
 }
 
+.section-id.section-id-xl {
+  font-size: 1.25rem;
+}
+
 .white-color .section-id {
   color: #fff;
 }
@@ -1554,7 +1562,7 @@ ol.digit-list p {
 .wscenterlogo img {
   width: auto;
   max-width: inherit;
-  max-height: 90px;
+  max-height: 72px;
   -webkit-transition: all 450ms ease-in-out;
   -moz-transition: all 450ms ease-in-out;
   -o-transition: all 450ms ease-in-out;
