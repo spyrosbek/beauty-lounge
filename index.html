@@ -1,123 +1,796 @@
 <!DOCTYPE html>
-<!-- La Notte - Nail Salon HTML5 Template design by DSAThemes (http://www.dsathemes.com) -->
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="author" content="spyrosbek"/>
-		<meta name="description" content="La Notte - Nail Salon HTML5 Template"/>
-		<meta name="keywords" content="Beauty, Salon, Beauty Lounge, Beauty Parlour, Nails, Manicure, Pedicure, Care, Health, Massage">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Beauty Lounge</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="Beauty Lounge" />
+	<meta name="keywords" content="Beauty, Salon, Beauty Lounge, Beauty Parlour, Nails, Manicure, Pedicure, Care, Health, Massage">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://beautylounge.com.gr" />
+	<meta property="og:title" content="Beauty Lounge" />
+	<meta property="og:description" content="Beauty Lounge - Nail salon" />
+	<title>Beauty Lounge</title>
+	<!-- FAVICON AND TOUCH ICONS -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+	<!-- BOOTSTRAP CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- FONT ICONS -->
+	<link href="css/flaticon.css" rel="stylesheet">
+	<!-- PLUGINS STYLESHEET -->
+	<link href="css/menu.css" rel="stylesheet">
+	<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/flexslider.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<link href="css/datetimepicker.min.css" rel="stylesheet">
+	<!-- TEMPLATE CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- ON SCROLL ANIMATION -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- RESPONSIVE CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+</head>
 
-		<!-- FAVICON AND TOUCH ICONS -->
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-		<link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon">
+<body>
+	<!-- PRELOADER SPINNER -->
+	<div id="loading" class="violet-red-loading">
+		<div id="loading-center">
+			<div class="spinner">
+				<div class="blob top"></div>
+				<div class="blob bottom"></div>
+				<div class="blob left"></div>
+				<div class="blob move-blob"></div>
+			</div>
+		</div>
+	</div>
+	<!-- PAGE CONTENT -->
+	<div id="page" class="page">
+		<!-- HEADER -->
+		<header id="header" class="header tra-menu navbar-dark">
+			<div class="header-wrapper">
+				<!-- MOBILE HEADER -->
+				<div class="wsmobileheader clearfix">
+					<span class="smllogo"><img src="images/logo.png" alt="mobile-logo" /></span>
+					<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+					<a href="tel:2104518138" class="callusbtn ico-20"><span class="flaticon-phone-call-1"></span></a>
+				</div>
+				<!-- NAVIGATION MENU -->
+				<div class="wsmainfull menu clearfix">
+					<div class="wsmainwp clearfix">
+						<!-- HEADER LOGO -->
+						<div class="desktoplogo"><a href="#hero-9" class="logo-black"><img src="images/logo.png" alt="header-logo"></a></div>
+						<div class="desktoplogo"><a href="#hero-9" class="logo-white"><img src="images/logo-white.png" alt="header-logo"></a></div>
+						<!-- MAIN MENU -->
+						<nav class="wsmenu clearfix">
+							<ul class="wsmenu-list">
+								<!-- SIMPLE NAVIGATION LINK -->
+								<li class="nl-simple" aria-haspopup="true"><a href="#pricing-3">Υπηρεσιες</a></li>
+								<!-- SIMPLE NAVIGATION LINK -->
+								<li class="nl-simple" aria-haspopup="true"><a href="#gallery-2">Φωτογραφιες</a></li>
+								<!-- SIMPLE NAVIGATION LINK -->
+								<!-- <li class="nl-simple" aria-haspopup="true"><a href="booking.html">Booking</a></li> -->
+								<!-- HEADER BUTTON -->
+								<li class="nl-simple" aria-haspopup="true">
+									<a href="#footer-3" class="btn violet-red--btn tra-black--hover last-link">Επικοινωνια</a>
+								</li>
+							</ul>
+						</nav> <!-- END MAIN MENU -->
+					</div>
+				</div> <!-- END NAVIGATION MENU -->
+			</div> <!-- End header-wrapper -->
+		</header> <!-- END HEADER -->
+		<!-- HERO-9 -->
+		<section id="hero-9" class="bg-fixed hero-section division">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<!-- HERO TEXT -->
+					<div class="col-md-8 col-lg-6">
+						<div class="hero-9-txt">
+							<!-- Title -->
+							<h2>Beauty Lounge</h2>
+							<!-- Text -->
+							<p class="p-title-md">
+								Η καλύτερη περιποίηση, για τις καλύτερές σας στιγμές
+							</p>
+							<!-- Button -->
+							<!-- <a href="#about-4" class="btn violet-red--btn tra-black--hover">Find Out More</a> -->
+						</div>
+					</div> <!-- END HERO TEXT -->
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- END HERO-9 -->
+		<!-- SERVICES-2 -->
+		<section id="services-2" class="wide-70 services-section division">
+			<div class="container">
+				<!-- SERVICES-2 WRAPPER -->
+				<div class="sbox-2-wrapper text-center">
+					<div class="row row-cols-1 row-cols-md-3">
+						<!-- SERVICES BOX #1 -->
+						<div class="col">
+							<div id="sb-2-1" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.3s">
+								<!-- Icon -->
+								<div class="sbox-ico ico-95 black--color">
+									<span class="flaticon-manicure-1"></span>
+								</div>
+								<!-- Title -->
+								<h5 class="h5-lg">Manicure</h5>
+								<!-- Text -->
+								<!-- <p class="p-lg">Ligula risus auctor tempus and dolor vitae undo purus semper sodales</p> -->
+								<!-- Link -->
+								<!-- <p class="tra-link mt-20"><a href="pricing.html">Find Out More</a></p> -->
+							</div>
+						</div>
+						<!-- SERVICES BOX #2 -->
+						<div class="col">
+							<div id="sb-2-2" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.6s">
+								<!-- Icon -->
+								<div class="sbox-ico ico-95 black--color">
+									<span class="flaticon-pedicure"></span>
+								</div>
+								<!-- Title -->
+								<h5 class="h5-lg">Pedicure</h5>
+							</div>
+						</div>
+						<!-- SERVICES BOX #3 -->
+						<div class="col">
+							<div id="sb-2-3" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.9s">
+								<!-- Icon -->
+								<div class="sbox-ico ico-95 black--color">
+									<span class="flaticon-nail"></span>
+								</div>
+								<!-- Title -->
+								<h5 class="h5-lg">Acrylic Nails</h5>
+							</div>
+						</div>
+						<!-- SERVICES BOX #4 -->
+						<div class="col">
+							<div id="sb-2-1" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.3s">
+								<!-- Icon -->
+								<div class="sbox-ico ico-95 black--color">
+									<span class="flaticon-nail-art"></span>
+								</div>
+								<!-- Title -->
+								<h5 class="h5-lg">Gel Nails</h5>
+							</div>
+						</div>
+						<!-- SERVICES BOX #5 -->
+						<div class="col">
+							<div id="sb-2-2" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.6s">
+								<!-- Icon -->
+								<div class="sbox-ico ico-95 black--color">
+									<span class="flaticon-nail-polish-2"></span>
+								</div>
+								<!-- Title -->
+								<h5 class="h5-lg">Nail Art</h5>
+							</div>
+						</div>
+						<!-- SERVICES BOX #6 -->
+						<div class="col">
+							<div id="sb-2-3" class="sbox-2 mb-40 wow fadeInUp" data-wow-delay="0.9s">
+								<!-- Icon -->
+								<div class="sbox-ico ico-95 black--color">
+									<span class="flaticon-nail-polish-1"></span>
+								</div>
+								<!-- Title -->
+								<h5 class="h5-lg">Bridal Nails</h5>
+							</div>
+						</div>
+					</div> <!-- End row -->
+				</div> <!-- END SERVICES-2 WRAPPER -->
+			</div> <!-- End container -->
+		</section> <!-- END SERVICES-2 -->
+		<!-- ABOUT-3a -->
+		<section id="about-3a" class="about-section division">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<!-- IMAGE BLOCK -->
+					<div class="col-md-5 col-lg-6 order-last order-md-2">
+						<div class="img-block left-column wow fadeInRight">
+							<img class="img-fluid" src="images/homepage-about-1.jpg" alt="about-image">
+						</div>
+					</div>
+					<!-- TEXT BLOCK -->
+					<div class="col-md-7 col-lg-6 order-first order-md-2">
+						<div class="txt-block right-column wow fadeInLeft">
+							<!-- Section ID -->
+							<!-- <div class="section-id">Get Your Shine On</div> -->
+							<!-- Title -->
+							<h2>Λάβετε τη φροντίδα που σας αξίζει</h2>
+							<!-- Text -->
+							<p class="p-lg">
+								Το Beauty Lounge στον Πειραιά είναι μια νέα επιχείρηση στο χώρο της ομορφιάς που δημιουργήθηκε από άτομο με πολυετή πείρα στο αντικείμενο.
+								<br/>
+								Μπορείτε να επισκεφτείτε το ινστιτούτο μας σε μια από τις πιο όμορφες συνοικίες του Πειραιά και να βρείτε όλες τις σύχρονες τάσεις στο χώρο της ομορφιάς.
+							</p>
+							<p class="p-lg">
+								Στο χώρο μας μπορείτε να απολαύσετε υπηρεσίες ομορφιάς.
+								<br/>
+								Ανυπομονούμε να σας υποδεχτούμε.
+							</p>
+							<p class="p-lg">
+								Το προσωπικό μας θα σας εξυπηρετήσει με τον καλύτερο τρόπο και λαμβάνοντας όλα τα απαραίτητα μέτρα προστασίας.
+							</p>
+							<!-- List -->
+							<!-- <ul class="simple-list">
+								<li class="list-item">
+									<p class="p-lg">Aliquam vitae molestie at quisque sapien volutpat and justo, aliquet molestie purus
+										efficitur ipsum
+									</p>
+								</li>
+							</ul> -->
+						</div>
+					</div>
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- END ABOUT-3a -->
+		<!-- ABOUT-4 -->
+		<section id="about-4" class="pt-100 about-section division">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<!-- TEXT BLOCK -->
+					<div class="col-md-6">
+						<div class="txt-block left-column wow fadeInRight">
+							<!-- Section ID -->
+							<!-- <span class="section-id">Fresh, Shiny, Bright</span> -->
+							<!-- Title -->
+							<!-- <h3 class="h3-md">Make your day shine with your shiny nails</h3> -->
+							<p class="p-lg">
+								Σας περιμένουμε στον όμορφα διαμορφωμένο χώρο μας προκειμένου να κάνουμε τη καθεμιά από εσάς να νιώσει μοναδική!
+							</p>
+						</div>
+					</div>
+					<!-- IMAGE BLOCK -->
+					<div class="col-md-6">
+						<div class="img-block right-column wow fadeInLeft">
+							<img class="img-fluid" src="images/homepage-about-2.jpg" alt="about-image">
+						</div>
+					</div>
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- END ABOUT-4 -->
+		<!-- PRICING-3 -->
+		<section id="pricing-3" class="wide-90 pricing-section division">
+			<!-- SECTION TITLE -->
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-xl-8">
+					<div class="section-title title-01 mb-60">
+						<h1>Υπηρεσίες</h1>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION TITLE -->
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-xl-8">
+					<div class="section-title title-01 mb-60">
+						<!-- Section ID -->
+						<span class="section-id section-id-xl">Μανικιουρ - Πεντικιουρ</span>
+						<!-- Title -->
+						<!-- <h3>Δείτε τις υπηρεσίες που προσφέρουμε</h3> -->
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<!-- PRICING-3 WRAPPER -->
+				<div class="pricing-3-wrapper">
+					<div class="row">
+						<!-- PRICING-3 TABLE -->
+						<div class="col-lg-6">
+							<div class="pricing-3-table pr-25 wow fadeInUp">
+								<!-- PRICING LIST -->
+								<ul class="pricing-3-list">
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Μανικιούρ απλό</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 10</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Express Μανικιούρ</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 6</h5>
+											</div>
+										</div>
+										<div class="price-txt">
+											<p class="p-md"><em>Λιμάρισμα - Βερνίκι απλό ή Ημιμόνιμο</em></p>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Μανικιούρ Ημιμόνιμο</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 14</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Μανικιούρ Ημιμόνιμο με Ενίσχυση</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 17</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Πεντικιούρ απλό</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 15</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Πεντικιούρ Ημιμόνιμο</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 19</h5>
+											</div>
+										</div>
+									</li>
+								</ul> <!-- END PRICING LIST -->
+							</div>
+						</div> <!-- END PRICING-3 TABLE -->
+						<!-- PRICING-3 TABLE -->
+						<div class="col-lg-6">
+							<div class="pricing-3-table pl-25 wow fadeInUp">
+								<ul class="pricing-3-list">
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Spa Πεντικιούρ</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 18</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Θεραπεία Παραφίνης</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 5</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Φυσική Ενίσχυση Gel</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 30</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Συντήρηση Gel</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 24</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Φυσική Ενίσχυση Acrygel</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 30</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Συντήρηση Acrygel</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 24</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Διορθώσεις</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">Δωρεάν</h5>
+											</div>
+										</div>
+									</li>
+								</ul> <!-- END PRICING LIST -->
+							</div>
+						</div> <!-- END PRICING-3 TABLE -->
+					</div> <!-- End row -->
+				</div> <!-- END PRICING-3 WRAPPER -->
+			</div> <!-- End container -->
+			<!-- SECTION TITLE -->
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-xl-8">
+					<div class="section-title title-01 mt-60 mb-60">
+						<!-- Section ID -->
+						<span class="section-id section-id-xl">Αποτριχωση</span>
+						<!-- Title -->
+						<!-- <h3>Δείτε τις υπηρεσίες που προσφέρουμε</h3> -->
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<!-- PRICING-3 WRAPPER -->
+				<div class="pricing-3-wrapper">
+					<div class="row">
+						<!-- PRICING-3 TABLE -->
+						<div class="col-lg-6">
+							<div class="pricing-3-table pr-25 wow fadeInUp">
+								<!-- PRICING LIST -->
+								<ul class="pricing-3-list">
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Φρύδια</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 5</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Άνω Χείλος</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 5</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Χέρια</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 10</h5>
+											</div>
+										</div>
+									</li>
+								</ul> <!-- END PRICING LIST -->
+							</div>
+						</div> <!-- END PRICING-3 TABLE -->
+						<!-- PRICING-3 TABLE -->
+						<div class="col-lg-6">
+							<div class="pricing-3-table pl-25 wow fadeInUp">
+								<ul class="pricing-3-list">
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Πόδια</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 12</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Μισό Πόδι</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 6</h5>
+											</div>
+										</div>
+									</li>
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Μπικίνι</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 10</h5>
+											</div>
+										</div>
+									</li>
+								</ul> <!-- END PRICING LIST -->
+							</div>
+						</div> <!-- END PRICING-3 TABLE -->
+					</div> <!-- End row -->
+				</div> <!-- END PRICING-3 WRAPPER -->
+			</div> <!-- End container -->
+			<!-- SECTION TITLE -->
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-xl-8">
+					<div class="section-title title-01 mt-60 mb-60">
+						<!-- Section ID -->
+						<span class="section-id section-id-xl">Προσφορα</span>
+						<!-- Title -->
+						<!-- <h3>Δείτε τις υπηρεσίες που προσφέρουμε</h3> -->
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<!-- PRICING-3 WRAPPER -->
+				<div class="pricing-3-wrapper">
+					<div class="row">
+						<!-- PRICING-3 TABLE -->
+						<div class="col-lg-12">
+							<div class="pricing-3-table wow fadeInUp">
+								<!-- PRICING LIST -->
+								<ul class="pricing-3-list">
+									<li class="pricing-3-item">
+										<div class="detail-price">
+											<div class="price-name">
+												<h5 class="h5-lg font-candara">Μανικιούρ & Πεντικιούρ (Ημιμόνιμο)</h5>
+											</div>
+											<div class="price-dots"></div>
+											<div class="price-number">
+												<h5 class="h5-lg font-candara">€ 28</h5>
+											</div>
+										</div>
+									</li>
+								</ul> <!-- END PRICING LIST -->
+							</div>
+						</div> <!-- END PRICING-3 TABLE -->
+					</div> <!-- End row -->
+				</div> <!-- END PRICING-3 WRAPPER -->
+			</div> <!-- End container -->
+		</section> <!-- END PRICING-3 -->
+		<!-- GALLERY-2 -->
+		<section id="gallery-2" class="pt-100 gallery-section division">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row justify-content-center">
+					<div class="col-lg-10 col-xl-8">
+						<div class="section-title title-01 mb-60">
+							<!-- Section ID -->
+							<!-- <span class="section-id section-id-xl">Φωτογραφιες</span> -->
+							<!-- Title -->
+							<h1>Φωτογραφιες</h1>
+						</div>
+					</div>
+				</div>
+				<!-- IMAGES HOLDER -->
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+					<!-- IMAGE -->
+					<div class="col">
+						<div id="img-2-1" class="gallery-image">
+							<a class="image-link" href="images/gallery/card-1.jpg">
+								<div class="hover-overlay">
+									<!-- Image -->
+									<img class="img-fluid" src="images/gallery/card-1.jpg" alt="gallery-image" />
+									<div class="item-overlay"></div>
+									<!-- Image Description -->
+									<div class="image-description white--color">
+										<div class="image-caption">
+											<p class="txt-upcase">MANICURE</p>
+											<h5 class="h5-lg">Beauty Lounge brand</h5>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- IMAGE -->
+					<div class="col">
+						<div id="img-2-1" class="gallery-image">
+							<a class="image-link" href="images/gallery/card-2.jpg">
+								<div class="hover-overlay">
+									<!-- Image -->
+									<img class="img-fluid" src="images/gallery/card-2.jpg" alt="gallery-image" />
+									<div class="item-overlay"></div>
+									<!-- Image Description -->
+									<div class="image-description white--color">
+										<div class="image-caption">
+											<p class="txt-upcase">MANICURE</p>
+											<h5 class="h5-lg">Beauty Lounge brand</h5>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- IMAGE -->
+					<div class="col">
+						<div id="img-2-1" class="gallery-image">
+							<a class="image-link" href="images/gallery/nail-art-1.jpg">
+								<div class="hover-overlay">
+									<!-- Image -->
+									<img class="img-fluid" src="images/gallery/nail-art-1.jpg" alt="gallery-image" />
+									<div class="item-overlay"></div>
+									<!-- Image Description -->
+									<div class="image-description white--color">
+										<div class="image-caption">
+											<p class="txt-upcase">MANICURE</p>
+											<h5 class="h5-lg">Nail Art</h5>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div> <!-- END IMAGES HOLDER -->
+			</div> <!-- End container -->
+		</section> <!-- END GALLERY-2 -->
+		<!-- ABOUT-5 -->
+		<section id="about-5" class="wide-100 about-section division">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<!-- TEXT TABLE -->
+					<div class="col-md-6 order-last order-md-2">
+						<div class="txt-table left-column wow fadeInRight">
+							<!-- Table -->
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>Δευτέρα</td>
+										<td></td>
+										<td class="text-end">Κλειστά</td>
+									</tr>
+									<tr>
+										<td>Τρίτη - Παρασκευή</td>
+										<td></td>
+										<td class="text-end">10:00 - 20:00</td>
+									</tr>
+									<tr>
+										<td>Σάββατο</td>
+										<td></td>
+										<td class="text-end">09:00 - 17:00</td>
+									</tr>
+									<tr class="last-tr">
+										<td>Κυριακή</td>
+										<td></td>
+										<td class="text-end">Κλειστά</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div> <!-- END TEXT TABLE -->
+					<!-- TEXT BLOCK -->
+					<div class="col-md-6 order-first order-md-2">
+						<div class="txt-block right-column wow fadeInLeft">
+							<!-- Section ID -->
+							<!-- <span class="section-id">Time Schedule</span> -->
+							<!-- Title -->
+							<h2>Ωράριο λειτουργίας</h2>
+							<!-- Text -->
+							<p class="p-lg">
+								Για την καλύτερη εξυπηρέτησή σας, μπορείτε να μας καλέσετε και να κλείσετε το ραντεβού σας.
+								<br/>
+								Όλα τα υπόλοιπα τα αναλαμβάνουμε εμείς!
+							</p>
+						</div>
+					</div> <!-- END TEXT BLOCK -->
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- END ABOUT-5 -->
+		<!-- FOOTER-3 -->
+		<footer id="footer-3" class="1bg--deep-blue footer division">
+			<div class="container 1white-smoke--color">
+				<!-- FOOTER CONTENT -->
+				<div class="row">
+					<!-- FOOTER CONTACTS -->
+					<div class="col-sm-6 col-lg-3">
+						<div class="footer-contacts mb-30">
+							<!-- Title -->
+							<h5 class="h5-md">Τοποθεσία</h5>
+							<!-- Salon Name -->
+							<p class="p-lg txt-600">Beauty Lounge</p>
+							<!-- Address -->
+							<p class="p-lg">Μπόταση 82, Πειραιάς</p>
+						</div>
+					</div>
+					<!-- FOOTER CONTACTS -->
+					<div class="col-sm-6 col-lg-3">
+						<div class="footer-contacts mb-30">
+							<!-- Title -->
+							<h5 class="h5-md">Επικοινωνία</h5>
+							<!-- Phone -->
+							<p class="p-lg">Τηλ: <a href="tel:2104518138">2104518138</a></p>
+							<!-- Email -->
+							<!-- <p class="p-lg"><a href="mailto:yourdomain@mail.com" class="txt-600">hello@yourdomain.com</a></p> -->
+							<!-- List -->
+							<ul class="foo-socials ico-20 text-center clearfix">
+								<li><a href="https://www.instagram.com/beauty_lounge_nails_face/" target="_blank" class="ico-facebook"><span class="flaticon-instagram"></span></a></li>
+								<!-- <li><a href="#" target="_blank" class="ico-twitter"><span class="flaticon-facebook"></span></a></li> -->
+							</ul>
+						</div>
+					</div>
+					<!-- FOOTER CONTACTS -->
+					<div class="col-sm-6 col-lg-3">
+						<div class="footer-info mb-30">
+							<!-- Title -->
+							<h5 class="h5-md">Λειτουργία</h5>
+							<!-- Text -->
+							<p class="p-lg">Τρι-Παρ: 10:00 - 20:00</p>
+							<p class="p-lg">Σαβ: 09:00 - 17:00</p>
+							<p class="p-lg">Κυρ-Δευ: Κλειστά</p>
 
-		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-
-		<!-- BOOTSTRAP CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- FONT ICONS -->
-		<link href="css/flaticon.css" rel="stylesheet">
-
-		<!-- PLUGINS STYLESHEET -->
-		<link href="css/menu.css" rel="stylesheet">
-		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
-		<link href="css/magnific-popup.css" rel="stylesheet">
-		<link href="css/flexslider.css" rel="stylesheet">
-		<link href="css/owl.carousel.min.css" rel="stylesheet">
-		<link href="css/owl.theme.default.min.css" rel="stylesheet">
-		<link href="css/datetimepicker.min.css" rel="stylesheet">
-
-		<!-- TEMPLATE CSS -->
-		<link href="css/style.css" rel="stylesheet">
-
-		<!-- ON SCROLL ANIMATION -->
-		<link href="css/animate.css" rel="stylesheet">
-
-		<!-- RESPONSIVE CSS -->
-		<link href="css/responsive.css" rel="stylesheet">
-
-	</head>
-
-
-
-	<body>
-    <div class="text-center h-100 m-5 p-5">
-      <p>
-        <img src="images/logo.png" alt="mobile-logo" width="400" />
-      </p>
-      <br><br><br><br><br><br><br><br>
-      <p>
-        <img src="images/work-in-progress.png" alt="under-construction" width="150"/>
-      </p>
-      <p>
-        Beauty Lounge is under construction.
-      </p>
-      <p>
-        Very soon our page will be up and running!
-      </p>
-    </div>
-
-		<!-- EXTERNAL SCRIPTS
-		============================================= -->
-		<script src="js/jquery-3.6.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/jquery.easing.js"></script>
-		<script src="js/jquery.appear.js"></script>
-		<script src="js/jquery.scrollto.js"></script>
-		<script src="js/menu.js"></script>
-		<script src="js/materialize.js"></script>
-		<script src="js/datetimepicker.js"></script>
-		<script src="js/jquery.vide.min.js"></script>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/isotope.pkgd.min.js"></script>
-		<script src="js/jquery.flexslider.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/booking-form.js"></script>
-		<script src="js/contact-form.js"></script>
-		<script src="js/jquery.validate.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/wow.js"></script>
-
-		<!-- Custom Script -->
-		<script src="js/custom.js"></script>
-
-		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-		<!--
-		<script>
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-		-->
-
-
-
-
-	</body>
-
-
-
+						</div>
+					</div>
+					<!-- FOOTER GOOGLE MAP -->
+					<div class="col-sm-6 col-lg-3">
+						<div class="google-map mb-30">
+							<a href="https://goo.gl/maps/ZmnpFvgiVTtjxdGUA" target="_blank">
+								<img class="img-fluid" src="images/footer-map.jpg" alt="footer-map">
+							</a>
+						</div>
+					</div> <!-- END FOOTER GOOGLE MAP -->
+				</div> <!-- END FOOTER CONTENT -->
+			</div> <!-- End container -->
+		</footer> <!-- END FOOTER-3 -->
+	</div> <!-- END PAGE CONTENT -->
+	<!-- EXTERNAL SCRIPTS -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/jquery.scrollto.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/datetimepicker.js"></script>
+	<script src="js/jquery.vide.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/booking-form.js"></script>
+	<script src="js/contact-form.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/wow.js"></script>
+	<!-- Custom Script -->
+	<script src="js/custom.js"></script>
+</body>
 </html>
