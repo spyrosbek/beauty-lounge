@@ -29,6 +29,7 @@ body {
   font-family: 'Catamaran', Candara, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #6c757d;
   font-weight: 400;
+  background-color: #F6F6F6;
 }
 
 .container {
@@ -1904,6 +1905,7 @@ ol.digit-list p {
 .hero-section .container {
   position: relative;
   z-index: 3;
+  text-align: center;
 }
 
 /*------------------------------------------*/
@@ -2225,7 +2227,7 @@ ol.digit-list p {
 
 #hero-9 {
   background-image: url(../images/hero-9.jpg);
-  padding-top: 260px;
+  padding-top: 210px;
   padding-bottom: 90px;
 }
 
@@ -2627,6 +2629,10 @@ td.text-end {
 
 .sbox-2 {
   padding: 0 8%;
+}
+
+.services-row {
+  justify-content: center;
 }
 
 .sbox-3,
