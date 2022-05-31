@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beautylounge.com.gr/sitemap.xml
