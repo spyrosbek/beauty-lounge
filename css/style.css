@@ -5308,3 +5308,8 @@ nav a#pull {
 .video-btn:hover {
   cursor: pointer;
 }
+
+.light-text {
+  font-size: 1.125rem;
+  font-style: italic;
+}
