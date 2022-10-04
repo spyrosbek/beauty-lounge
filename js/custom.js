@@ -1,47 +1,34 @@
 // JavaScript Document
 
-
-	$(window).on('load', function() {
-	
-		"use strict";
-
-						
-		/*----------------------------------------------------*/
-		/*	Preloader
-		/*----------------------------------------------------*/
-		
-		var preloader = $('#loading'),
-			loader = preloader.find('.spinner');
-			loader.fadeOut();
-			preloader.delay(400).fadeOut('slow');
-				
-	});
-
-
 	$(window).on('scroll', function() {
-		
+
 		"use strict";
 
-								
+
 		/*----------------------------------------------------*/
 		/*	Navigtion Menu Scroll
-		/*----------------------------------------------------*/	
-		
+		/*----------------------------------------------------*/
+
 		var b = $(window).scrollTop();
-		
-		if( b > 80 ){		
+
+		if( b > 80 ){
 			$(".wsmainfull").addClass("scroll");
 		} else {
 			$(".wsmainfull").removeClass("scroll");
-		}				
+		}
 
 	});
 
 
 	$(document).ready(function() {
-			
+
 		"use strict";
-		
+
+		/* Preloader */
+		var preloader = $('#loading'),
+			loader = preloader.find('.spinner');
+			loader.fadeOut();
+			preloader.delay(400).fadeOut('slow');
 
 		new WOW().init();
 
@@ -65,18 +52,18 @@
 		$('.slide-prev').on('click', function(){
 			$('.slider').slider('prev');
 		});
-		
+
 
 		/*----------------------------------------------------*/
 		/*	Hero Text Rotator
 		/*----------------------------------------------------*/
-	
+
 		$('.hero-txt-rotator').flexslider({
 			animation: "fade",
 			controlNav: true,
-			directionNav: false,  
-			slideshowSpeed: 6000,   
-			animationSpeed: 700,  
+			directionNav: false,
+			slideshowSpeed: 6000,
+			animationSpeed: 700,
 			start: function(slider){
 				$('body').removeClass('loading');
 			}
@@ -86,7 +73,7 @@
 		/*----------------------------------------------------*/
 		/*	ScrollUp
 		/*----------------------------------------------------*/
-		
+
 		$.scrollUp = function (options) {
 
 			// Defaults
@@ -111,7 +98,7 @@
 				href: '#top',
 				title: o.scrollText
 			}).appendTo('body');
-			
+
 			// If not using an image display text
 			if (!o.scrollImg) {
 				$(scrollId).text(o.scrollText);
@@ -127,7 +114,7 @@
 			}
 
 			// Scroll function
-			$(window).on('scroll', function(){	
+			$(window).on('scroll', function(){
 				switch (o.animation) {
 					case "fade":
 						$( ($(window).scrollTop() > o.topDistance) ? $(scrollId).fadeIn(o.animationInSpeed) : $(scrollId).fadeOut(o.animationOutSpeed) );
@@ -141,7 +128,7 @@
 			});
 
 		};
-		
+
 		$.scrollUp();
 
 
@@ -157,7 +144,7 @@
 		/*----------------------------------------------------*/
 
 		$(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
-				
+
 		$(".accordion > .accordion-item").on('click', function() {
 			$(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
 			$(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
@@ -208,310 +195,74 @@
 	              columnWidth: '.masonry-image',
 	            }
 	        });
-	        
+
 	    });
 
 
 		/*----------------------------------------------------*/
 		/*	Single Image Lightbox
 		/*----------------------------------------------------*/
-				
+
 		$('.image-link').magnificPopup({
 		  type: 'image'
-		});	
+		});
 
 
 		/*----------------------------------------------------*/
 		/*	Video Link #1 Lightbox
 		/*----------------------------------------------------*/
-		
+
 		$('.video-popup1').magnificPopup({
-		    type: 'iframe',		  	  
+		    type: 'iframe',
 				iframe: {
 					patterns: {
-						youtube: {			   
+						youtube: {
 							index: 'youtube.com',
-							src: 'https://www.youtube.com/embed/SZEflIVnhH8'				
+							src: 'https://www.youtube.com/embed/SZEflIVnhH8'
 								}
 							}
-						}		  		  
+						}
 		});
 
 
 		/*----------------------------------------------------*/
 		/*	Video Link #2 Lightbox
 		/*----------------------------------------------------*/
-		
+
 		$('.video-popup2').magnificPopup({
-		    type: 'iframe',		  	  
+		    type: 'iframe',
 				iframe: {
 					patterns: {
-						youtube: {			   
+						youtube: {
 							index: 'youtube.com',
-							src: 'https://www.youtube.com/embed/7e90gBu4pas'				
+							src: 'https://www.youtube.com/embed/7e90gBu4pas'
 								}
 							}
-						}		  		  
+						}
 		});
 
-
-		/*----------------------------------------------------*/
-		/*	Video Link #3 Lightbox
-		/*----------------------------------------------------*/
-		
+		/* Video Link #3 Lightbox */
 		$('.video-popup3').magnificPopup({
-		    type: 'iframe',		  	  
+		    type: 'iframe',
 				iframe: {
 					patterns: {
-						youtube: {			   
+						youtube: {
 							index: 'youtube.com',
-							src: 'https://www.youtube.com/embed/0gv7OC9L2s8'					
+							src: 'https://www.youtube.com/embed/0gv7OC9L2s8'
 								}
 							}
-						}		  		  
+						}
 		});
 
-
-		/*----------------------------------------------------*/
-		/*	Testimonials Rotator
-		/*----------------------------------------------------*/
-	
-		var owl = $('.reviews-wrapper');
-			owl.owlCarousel({
-				items: 3,
-				loop:true,
-				autoplay:true,
-				navBy: 1,
-				autoplayTimeout: 4500,
-				autoplayHoverPause: true,
-				smartSpeed: 1500,
-				responsive:{
-					0:{
-						items:1
-					},
-					767:{
-						items:1
-					},
-					768:{
-						items:2
-					},
-					991:{
-						items:3
-					},
-					1000:{
-						items:3
-					}
-				}
-		});
-
-
-		/*----------------------------------------------------*/
-		/*	Reviews Rotator Flexslider
-		/*----------------------------------------------------*/
-		
+		/* Reviews Rotator Flexslider */
 		$('#reviews-2 .flexslider').flexslider({
 			animation: "fade",
 			controlNav: true,
-			directionNav: false,  
-			slideshowSpeed: 5000,   
-			animationSpeed: 2000,  
+			directionNav: false,
+			slideshowSpeed: 5000,
+			animationSpeed: 2000,
 			start: function(slider){
 				$('body').removeClass('loading');
 			}
-		});	
-
-
-		/*----------------------------------------------------*/
-		/*	Brands Logo Rotator
-		/*----------------------------------------------------*/
-	
-		var owl = $('.brands-1-carousel');
-			owl.owlCarousel({
-				items: 5,
-				loop:true,
-				autoplay:true,
-				navBy: 1,
-				nav:false,
-				autoplayTimeout: 4000,
-				autoplayHoverPause: false,
-				smartSpeed: 2000,
-				responsive:{
-					0:{
-						items:2
-					},
-					550:{
-						items:3
-					},
-					767:{
-						items:3
-					},
-					768:{
-						items:4
-					},
-					991:{
-						items:5
-					},				
-					1000:{
-						items:5
-					}
-				}
 		});
-
-
-		/*----------------------------------------------------*/
-		/*	Brands Logo Rotator
-		/*----------------------------------------------------*/
-	
-		var owl = $('.brands-2-carousel');
-			owl.owlCarousel({
-				items: 5,
-				loop:true,
-				autoplay:true,
-				navBy: 1,
-				nav:false,
-				autoplayTimeout: 4000,
-				autoplayHoverPause: false,
-				smartSpeed: 2000,
-				responsive:{
-					0:{
-						items:2
-					},
-					550:{
-						items:3
-					},
-					767:{
-						items:3
-					},
-					768:{
-						items:4
-					},
-					991:{
-						items:4
-					},				
-					1000:{
-						items:4
-					}
-				}
-		});
-
-
-		/*----------------------------------------------------*/
-		/*	Booking Form Validation
-		/*----------------------------------------------------*/
-
-		$(".booking-form").validate({
-			rules: {
-				select: "required",
-				firstname: "required",
-				lastname: "required",
-				email: {
-					required: true,
-					email: true
-				},
-				phone:{
-					required: true,
-					digits: true,
-				}
-			},
-			messages: {
-				select: "This field is required",
-				firstname: "Please enter your first name",
-				lastname: "Please enter your last name",
-				email: "We need your email address to contact you",
-				phone: "Please enter a valid number",
-			}
-		});
-
-
-		/*----------------------------------------------------*/
-		/*	Contact Form Validation
-		/*----------------------------------------------------*/
-		
-		$(".contact-form").validate({
-			rules:{ 
-					name:{
-						required: true,
-						minlength: 1,
-						maxlength: 16,
-					},
-					email:{
-						required: true,
-						email: true,
-					},       		
-					message:{
-						required: true,
-						minlength: 2,
-						}
-					},
-					messages:{
-							name:{
-								required: "Please enter no less than (1) characters"
-							}, 
-							email:{
-								required: "We need your email address to contact you",
-								email: "Your email address must be in the format of name@domain.com"
-							}, 
-							message:{
-								required: "Please enter no less than (2) characters"
-							}, 
-						}
-		});
-
-
-		/*----------------------------------------------------*/
-		/*	Comment Form Validation
-		/*----------------------------------------------------*/
-		
-		$(".comment-form").validate({
-			rules:{ 
-					name:{
-						required: true,
-						minlength: 1,
-						maxlength: 16,
-					},
-					email:{
-						required: true,
-						email: true,
-					},       		
-					message:{
-						required: true,
-						minlength: 2,
-						}
-					},
-					messages:{
-							name:{
-								required: "Please enter no less than (1) characters"
-							}, 
-							email:{
-								required: "We need your email address to contact you",
-								email: "Your email address must be in the format of name@domain.com"
-							}, 
-							message:{
-								required: "Please enter no less than (2) characters"
-							}, 
-						}
-		});	
-
-
-		/*----------------------------------------------------*/
-		/*	Newsletter Subscribe Form
-		/*----------------------------------------------------*/
-	
-		$('.newsletter-form').ajaxChimp({
-        language: 'cm',
-        url: 'https://dsathemes.us3.list-manage.com/subscribe/post?u=af1a6c0b23340d7b339c085b4&id=344a494a6e'
-            //http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-		});
-
-		$.ajaxChimp.translations.cm = {
-			'submit': 'Submitting...',
-			0: 'We have sent you a confirmation email',
-			1: 'Please enter your email address',
-			2: 'An email address must contain a single @',
-			3: 'The domain portion of the email address is invalid (the portion after the @: )',
-			4: 'The username portion of the email address is invalid (the portion before the @: )',
-			5: 'This email address looks fake or invalid. Please enter a real email address'
-		};	
-
-
 	});
